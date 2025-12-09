@@ -1,0 +1,21 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "chaewon-me"
+compatibility_date = "2024-12-01"
+main = "./worker.js"
+
+[assets]
+directory = "./build/client"
+binding = "ASSETS"
+
+[build]
+command = "npm run build"
+
+# Custom Domains configuration
+[[routes]]
+pattern = "chaewon.me"
+custom_domain = true
+
+# Disable Smart Placement to prevent Workers from running in unexpected regions
+# This ensures Workers run closest to where requests are received (Korea for Korean users)
+[placement]
+mode = "off"
