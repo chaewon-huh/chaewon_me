@@ -84,6 +84,42 @@ export default function Index() {
           <div className="space-y-4">
             <div>
               <button
+                onClick={() => toggleExpand("cofounder")}
+                className="text-left w-full text-[15px] leading-[1.8] hover:opacity-70 transition-opacity"
+                style={{
+                  cursor: "pointer",
+                  background: "none",
+                  border: "none",
+                  padding: 0,
+                  font: "inherit",
+                  color: "inherit",
+                }}
+              >
+                <span
+                  className={
+                    expandedItems.includes("cofounder")
+                      ? "font-semibold underline"
+                      : ""
+                  }
+                >
+                  • Co-founder at Dooi (25.12 - )
+                </span>
+              </button>
+              {expandedItems.includes("cofounder") && (
+                <div
+                  style={{ marginLeft: "40px", marginTop: "12px" }}
+                  className="text-[15px] leading-[1.8]"
+                >
+                  <ul className="list-disc list-outside ml-5 space-y-2">
+                    <li>Finding PMF</li>
+                    <li>fastapps.org</li>
+                  </ul>
+                </div>
+              )}
+            </div>
+
+            <div>
+              <button
                 onClick={() => toggleExpand("hir")}
                 className="text-left w-full text-[15px] leading-[1.8] hover:opacity-70 transition-opacity"
                 style={{
@@ -102,7 +138,7 @@ export default function Index() {
                       : ""
                   }
                 >
-                  • HIR (Hacker in Residence) at Bass Ventures (25.09 - Present)
+                  • HIR (Hacker in Residence) at Bass Ventures (25.09 - 25.12)
                 </span>
               </button>
               {expandedItems.includes("hir") && (
@@ -110,8 +146,8 @@ export default function Index() {
                   style={{ marginLeft: "40px", marginTop: "12px" }}
                   className="text-[15px] leading-[1.8]"
                 >
-                  <ul className="list-disc list-outside ml-5">
-                    <li>Building in Residence, Collecting Context</li>
+                  <ul className="list-disc list-outside ml-5 space-y-2">
+                    <li>Built in Residence, Collected Context</li>
                   </ul>
                 </div>
               )}
@@ -145,7 +181,7 @@ export default function Index() {
                   style={{ marginLeft: "40px", marginTop: "12px" }}
                   className="text-[15px] leading-[1.8]"
                 >
-                  <ul className="list-disc list-outside ml-5">
+                  <ul className="list-disc list-outside ml-5 space-y-2">
                     <li>
                       Trained and deployed AI models to improve fetal 3D
                       ultrasound images without malformations.
@@ -262,7 +298,7 @@ export default function Index() {
             <div className="text-[15px] leading-[1.8]">
               • BS, POSTECH (24.03 - Present)
               <div style={{ marginLeft: "40px", marginTop: "12px" }}>
-                <ul className="list-disc list-outside ml-5">
+                <ul className="list-disc list-outside ml-5 space-y-2">
                   <li>on leave after semester 1</li>
                 </ul>
               </div>
