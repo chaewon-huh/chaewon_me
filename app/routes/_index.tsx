@@ -338,7 +338,7 @@ export default function Index() {
                       : ""
                   }
                 >
-                  • POSTECH Presidential Fellowship &apos;24
+                  • POSTECH Presidential Fellowship by Special Talent
                 </span>
               </button>
               {expandedItems.includes("presidential") && (
@@ -347,9 +347,8 @@ export default function Index() {
                   className="text-[15px] leading-[1.8]"
                 >
                   <ul className="list-disc list-outside ml-5 space-y-2">
-                    <li>Awarded a 45k usd scholarship.</li>
-                    <li>First recipient from a general high school.</li>
-                    <li>One of only two selected in the class of &apos;28.</li>
+                    <li>Full ride + 50k grant.</li>
+                    <li>Sole recipient in class of &apos;28.</li>
                   </ul>
                 </div>
               )}
