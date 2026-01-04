@@ -102,7 +102,7 @@ export default function Index() {
                       : ""
                   }
                 >
-                  • Co-founder at Dooi (25.12 - )
+                  • Co-founder at Sume (25.12 - )
                 </span>
               </button>
               {expandedItems.includes("cofounder") && (
@@ -111,8 +111,24 @@ export default function Index() {
                   className="text-[15px] leading-[1.8]"
                 >
                   <ul className="list-disc list-outside ml-5 space-y-2">
-                    <li>Finding PMF</li>
-                    <li>fastapps.org</li>
+                    <li>
+                      <a
+                        href="https://sumelabs.com"
+                        className="underline hover:no-underline"
+                      >
+                        sumelabs.com
+                      </a>
+                      : learn things through Zoom calls
+                    </li>
+                    <li>
+                      currently at{" "}
+                      <a
+                        href="https://f.inc/artifact"
+                        className="underline hover:no-underline"
+                      >
+                        f.inc/artifact
+                      </a>
+                    </li>
                   </ul>
                 </div>
               )}
