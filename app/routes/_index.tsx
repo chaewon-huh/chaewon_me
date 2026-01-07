@@ -29,10 +29,10 @@ export default function Index() {
 
       <p className="text-[15px]">
         <a
-          href="mailto:chase@dooilabs.com"
+          href="mailto:chase@sumelabs.com"
           className="underline hover:no-underline"
         >
-          chase@dooilabs.com
+          chase@sumelabs.com
         </a>
       </p>
 
