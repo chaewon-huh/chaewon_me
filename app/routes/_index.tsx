@@ -171,53 +171,6 @@ export default function Index() {
 
             <div>
               <button
-                onClick={() => toggleExpand("ondemand")}
-                className="text-left w-full text-[15px] leading-[1.8] hover:opacity-70 transition-opacity"
-                style={{
-                  cursor: "pointer",
-                  background: "none",
-                  border: "none",
-                  padding: 0,
-                  font: "inherit",
-                  color: "inherit",
-                }}
-              >
-                <span
-                  className={
-                    expandedItems.includes("ondemand")
-                      ? "font-semibold underline"
-                      : ""
-                  }
-                >
-                  • AI Engineer at Ondemand Soft (25.07 - 25.09)
-                </span>
-              </button>
-              {expandedItems.includes("ondemand") && (
-                <div
-                  style={{ marginLeft: "40px", marginTop: "12px" }}
-                  className="text-[15px] leading-[1.8]"
-                >
-                  <ul className="list-disc list-outside ml-5 space-y-2">
-                    <li>
-                      Trained and deployed AI models to improve fetal 3D
-                      ultrasound images without malformations.
-                    </li>
-                  </ul>
-                  <div style={{ marginTop: "16px" }}>
-                    <img
-                      src="/images/ods.gif"
-                      alt="Fetal 3D ultrasound enhancement"
-                      width={400}
-                      height={400}
-                      style={{ maxWidth: "100%", height: "auto" }}
-                    />
-                  </div>
-                </div>
-              )}
-            </div>
-
-            <div>
-              <button
                 onClick={() => toggleExpand("stealth")}
                 className="text-left w-full text-[15px] leading-[1.8] hover:opacity-70 transition-opacity"
                 style={{
