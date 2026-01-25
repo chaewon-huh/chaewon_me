@@ -34,6 +34,13 @@ export default function Index() {
         >
           chase@sumelabs.com
         </a>
+        {" / "}
+        <a
+          href="https://cal.com/chase-huh-hg4a7d/30min"
+          className="underline hover:no-underline"
+        >
+          30 min calls
+        </a>
       </p>
 
       <div style={{ marginTop: "48px" }}>
